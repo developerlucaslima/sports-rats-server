@@ -1,21 +1,13 @@
 services:
   postgresql:
-    image: bitnami/postgresql:latest
-    container_name: sportsrats-postgres
-    volumes:
-      - db:/bitnami/postgresql
-    environment:
-      POSTGRESQL_USER: ${POSTGRESQL_USER}
-      POSTGRESQL_PASSWORD: ${POSTGRESQL_PASSWORD}
-      POSTGRESQL_DATABASE: ${POSTGRESQL_DATABASE}
+    container_name: sports-rats-pb
+    image: postgres
     ports:
-      - "5432:5432"
-    networks:
-      - sportsrats-network
-
-networks:
-  sportsrats-network:
-    driver: bridge
-
-volumes:
-  db:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    #   PGDATA: /data/postgres
+    # volumes:
+    #   - .data/pg:/data/postgres
