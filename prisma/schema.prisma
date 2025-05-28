@@ -9,7 +9,7 @@ datasource db {
 }
 
 enum Role {
-  athlete
+  player
   administrator
 }
 
@@ -61,7 +61,7 @@ model Player {
   bio                   String?
   latitude              Float?
   longitude             Float?
-  role                  Role             @default(athlete)
+  role                  Role             @default(player)
   subscriptionPlan      SubscriptionPlan @default(free)
   countryCode           String?
   physicalConditionName String?
