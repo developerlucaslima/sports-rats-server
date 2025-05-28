@@ -16,6 +16,7 @@
       "@entities/*": ["src/shared/entities/*"],
       "@value-objects/*": ["src/shared/value-objects/*"],
       "@types/*": ["src/shared/types/*"],
+      "@utils/*": ["src/shared/utils/*"],
     },
     "incremental": true,
     "skipLibCheck": true,
