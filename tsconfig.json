@@ -18,8 +18,7 @@
     "noFallthroughCasesInSwitch": false,
     "baseUrl": "./",
     "paths": {
-      "@players/*": ["src/players/*"],
-      "@shared/*": ["src/shared/*"],
+      "@modules/*": ["src/modules/*"],
       "@entities/*": ["src/shared/entities/*"],
       "@value-objects/*": ["src/shared/value-objects/*"],
       "@types/*": ["src/shared/types/*"],
