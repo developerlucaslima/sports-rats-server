@@ -1,9 +1,10 @@
-import { EnvModule } from '@env/env.module'
+import { DatabaseModule } from '@config/database/database.module'
+import { EnvModule } from '@config/env/env.module'
+import { AuthModule } from '@modules/auth/auth.module'
+import { PlayersModule } from '@modules/players/players.module'
 import { Module } from '@nestjs/common'
-import { PlayersModule } from '@players/players.module'
-import { SharedModule } from '@shared/shared.module'
 
 @Module({
-  imports: [PlayersModule, SharedModule, EnvModule],
+  imports: [PlayersModule, EnvModule, AuthModule, DatabaseModule],
 })
 export class AppModule {}
