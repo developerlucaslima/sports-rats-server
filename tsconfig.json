@@ -24,6 +24,7 @@
       "@value-objects/*": ["src/shared/value-objects/*"],
       "@types/*": ["src/shared/types/*"],
       "@utils/*": ["src/shared/utils/*"],
+      "@*": ["src/*"],
     },
      "types": [
       "vitest/globals",
