@@ -19,8 +19,9 @@
     "baseUrl": "./",
     "paths": {
       "@modules/*": ["src/modules/*"],
+      "@either/*": ["src/shared/either/*"],
       "@entities/*": ["src/shared/entities/*"],
-      "@value-objects/*": ["src/shared/value-objects/*"],
+      "@value-objects/*": ["src/shared/entities/value-objects/*"],
       "@types/*": ["src/shared/types/*"],
       "@utils/*": ["src/shared/utils/*"],
       "@*": ["src/*"],
