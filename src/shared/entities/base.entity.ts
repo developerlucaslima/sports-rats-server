@@ -1,4 +1,4 @@
-import { UniqueEntityID } from '@shared/value-objects/unique-entity-id'
+import { UniqueEntityID } from '@entities/value-objects/unique-entity-id'
 
 export class Entity<Props> {
   private _id: UniqueEntityID

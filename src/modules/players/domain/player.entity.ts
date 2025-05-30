@@ -1,8 +1,8 @@
+import type { UniqueEntityID } from '@entities/value-objects/unique-entity-id'
 import { Entity } from '@shared/entities/base.entity'
 import type { SubscriptionPlan, UserRole } from '@shared/types/enums'
 import type { Optional } from '@shared/types/optional'
 import { comparePasswordHash } from '@shared/utils/compare-password-hash'
-import type { UniqueEntityID } from '@shared/value-objects/unique-entity-id'
 
 interface PlayerProps {
   id: string
