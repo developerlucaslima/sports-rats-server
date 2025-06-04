@@ -18,12 +18,35 @@
     "noFallthroughCasesInSwitch": false,
     "baseUrl": "./",
     "paths": {
+      // auth module
+      "@auth-controllers/*": ["src/modules/auth/controllers/*"],
+      "@auth-domain/*": ["src/modules/auth/domain/*"],
+      "@auth-infrastructure*": ["src/modules/auth/infrastructure*"],
+      "@auth-use-cases/*": ["src/modules/auth/use-cases/*"],
+      "@auth/*": ["src/modules/auth/*"],
+      
+      // players module
+      "@players-controllers/*": ["src/modules/players/controllers/*"],
+      "@players-domain/*": ["src/modules/players/domain/*"],
+      "@players-infrastructure*": ["src/modules/players/infrastructure*"],
+      "@players-use-cases/*": ["src/modules/players/use-cases/*"],
+      "@players/*": ["src/modules/players/*"],
+      
+      // modules
       "@modules/*": ["src/modules/*"],
+
+      // infrastructure
+      "@infrastructure/*": ["src/infrastructure/*"],
+
+      // shared
       "@either/*": ["src/shared/either/*"],
       "@entities/*": ["src/shared/entities/*"],
       "@value-objects/*": ["src/shared/entities/value-objects/*"],
-      "@types/*": ["src/shared/types/*"],
+      "@shared-types/*": ["src/shared/types/*"],
+      "@errors/*": ["src/shared/errors/*"],
       "@utils/*": ["src/shared/utils/*"],
+
+      // root
       "@*": ["src/*"],
     },
      "types": [
