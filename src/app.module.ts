@@ -1,10 +1,11 @@
-import { DatabaseModule } from '@config/database/database.module'
-import { EnvModule } from '@config/env/env.module'
+import { DatabaseModule } from '@infrastructure/database/database.module'
+import { EnvModule } from '@infrastructure/env/env.module'
+import { JWTModule } from '@infrastructure/jwt/jwt.module'
 import { AuthModule } from '@modules/auth/auth.module'
 import { PlayersModule } from '@modules/players/players.module'
 import { Module } from '@nestjs/common'
 
 @Module({
-  imports: [PlayersModule, EnvModule, AuthModule, DatabaseModule],
+  imports: [PlayersModule, AuthModule, EnvModule, DatabaseModule, JWTModule],
 })
 export class AppModule {}
