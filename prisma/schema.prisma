@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -55,7 +54,7 @@ model Player {
   isEmailVerified       Boolean          @default(false)
   username              String?          @unique
   name                  String
-  passwordHash          String?
+  hashedPassword        String?
   avatarUrl             String?
   age                   Int?
   bio                   String?
